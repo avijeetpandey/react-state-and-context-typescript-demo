@@ -1,4 +1,4 @@
-import React, { type ReactNode, createContext } from "react";
+import { type ReactNode, createContext } from "react";
 
 type Timer = {
   name: string;
@@ -16,7 +16,7 @@ type TimersContextValue = TimerState & {
   stopTimers: () => void;
 };
 
-const TimersContext = createContext<TimersContextValue | null>(null);
+export const TimersContext = createContext<TimersContextValue | null>(null);
 
 // Provider for the context API
 type TimerContextProviderProps = {
