@@ -1,4 +1,4 @@
-import Button from "./UI/Button.tsx";
+import Button from "./ui/Button.tsx";
 import { useTimersContext } from "./hooks/useTimersContext.ts";
 
 export default function Header() {

@@ -1,4 +1,4 @@
-import Container from "./UI/Container.tsx";
+import Container from "./ui/Container.tsx";
 import { type Timer as TimerProps } from "./../store/timer-context.tsx";
 import { useEffect, useRef, useState } from "react";
 import { useTimersContext } from "./hooks/useTimersContext.ts";
