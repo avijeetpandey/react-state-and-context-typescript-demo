@@ -8,11 +8,11 @@ export default function Header() {
     <header>
       <h1>ReactTimer</h1>
       <Button
-        onClick={() => {
+        onClick={
           timersContext.isRunning
-            ? timersContext.stopTimers()
-            : timersContext.startTimers();
-        }}
+            ? timersContext.stopTimers
+            : timersContext.startTimers
+        }
       >
         {timersContext.isRunning ? "Stop" : "Start"} Timers
       </Button>
